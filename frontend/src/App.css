@@ -1,0 +1,92 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0055aa;
+}
+
+/* Link styles */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+h1 {
+  margin-bottom: 1rem;
+}
+
+/* Navbar styles */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0066cc;
+}
+
+/* Form validation */
+input:invalid,
+textarea:invalid {
+  border-color: #ff4444;
+}
+
+.error {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
